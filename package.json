@@ -5,7 +5,7 @@
    "main": "index.js",
    "type": "commonjs",  
    "scripts": {
-           
+            "build": "npm install && pm2 start",
             "run": "pm2 start . --deep-monitoring --attach --name Suhail || node .",
             "suhail": "pm2 start . --deep-monitoring --attach --name Suhail || node .",
             "start": "pm2 start . --attach --name Suhail",
@@ -13,7 +13,7 @@
             "old-heroku-postbuild": "git clone https://github.com/SuhailTechInfo/Suhail-Md.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
             "fis-heroku-postbuild": "git clone https://github.com/SuhailTechInfo/Suhail-Md.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
             "dbs--postinstall": "npx puppeteer@latest install --y"
-            "build": "npm install && pm2 start"  
+              
       
    },
    "author": "SuhailTechInfo",
