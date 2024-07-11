@@ -5,7 +5,7 @@
    "main": "index.js",
    "type": "commonjs",  
    "scripts": {
-              "build": "npm install && pm2 start . --update"
+              "build": "npm install && pm2 start "
             "run": "pm2 start . --deep-monitoring --attach --name Suhail || node .",
             "suhail": "pm2 start . --deep-monitoring --attach --name Suhail || node .",
             "start": "pm2 start . --attach --name Suhail",
