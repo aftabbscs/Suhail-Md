@@ -9,7 +9,6 @@
             "run": "pm2 start . --deep-monitoring --attach --name Suhail || node .",
             "suhail": "pm2 start . --deep-monitoring --attach --name Suhail || node .",
             "start": "pm2 start . --attach --name Suhail",
-            "build": "npm run build"
             "stop": "pm2 stop Suhail",
             "old-heroku-postbuild": "git clone https://github.com/SuhailTechInfo/Suhail-Md.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
             "fis-heroku-postbuild": "git clone https://github.com/SuhailTechInfo/Suhail-Md.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
@@ -81,3 +80,12 @@
    "--bugs": { "url": "https://github.com/SuhailTechInfo/Suhail-Md/issues" },
    "--homepage": "https://github.com/SuhailTechInfo/Suhail-Md#readme"
 }
+
+
+
+
+
+"scripts": {
+  "build": "npm run build"
+}
+
